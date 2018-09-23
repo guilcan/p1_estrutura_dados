@@ -22,28 +22,29 @@ class Ui_buscar
 public:
     QLabel *label;
     QLabel *label_2;
-    QLineEdit *lineEdit;
+    QLabel *label_3;
+    QLineEdit *lineEdit_cpf_3;
 
     void setupUi(QDialog *buscar)
     {
         if (buscar->objectName().isEmpty())
             buscar->setObjectName(QStringLiteral("buscar"));
-        buscar->resize(435, 338);
+        buscar->resize(433, 327);
         label = new QLabel(buscar);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(40, 20, 331, 20));
+        label->setGeometry(QRect(60, 10, 271, 20));
         QFont font;
         font.setPointSize(15);
         label->setFont(font);
         label_2 = new QLabel(buscar);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(50, 160, 47, 13));
-        QFont font1;
-        font1.setPointSize(12);
-        label_2->setFont(font1);
-        lineEdit = new QLineEdit(buscar);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
-        lineEdit->setGeometry(QRect(120, 160, 201, 20));
+        label_2->setGeometry(QRect(150, 50, 111, 16));
+        label_3 = new QLabel(buscar);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(30, 150, 47, 13));
+        lineEdit_cpf_3 = new QLineEdit(buscar);
+        lineEdit_cpf_3->setObjectName(QStringLiteral("lineEdit_cpf_3"));
+        lineEdit_cpf_3->setGeometry(QRect(100, 150, 211, 20));
 
         retranslateUi(buscar);
 
@@ -53,8 +54,9 @@ public:
     void retranslateUi(QDialog *buscar)
     {
         buscar->setWindowTitle(QApplication::translate("buscar", "Dialog", nullptr));
-        label->setText(QApplication::translate("buscar", "BUSCAR INFORMA\303\207\303\225ES DE OSPEDES", nullptr));
-        label_2->setText(QApplication::translate("buscar", "CPF:", nullptr));
+        label->setText(QApplication::translate("buscar", "BEM-VINDO A TELA DE BUSCA", nullptr));
+        label_2->setText(QApplication::translate("buscar", "Quem deseja buscar?", nullptr));
+        label_3->setText(QApplication::translate("buscar", "CPF:", nullptr));
     } // retranslateUi
 
 };

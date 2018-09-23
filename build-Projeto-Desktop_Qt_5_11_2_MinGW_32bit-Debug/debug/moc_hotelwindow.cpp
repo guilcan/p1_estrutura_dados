@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_HotelWindow_t {
     QByteArrayData data[5];
-    char stringdata0[104];
+    char stringdata0[103];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,13 +32,13 @@ struct qt_meta_stringdata_HotelWindow_t {
 static const qt_meta_stringdata_HotelWindow_t qt_meta_stringdata_HotelWindow = {
     {
 QT_MOC_LITERAL(0, 0, 11), // "HotelWindow"
-QT_MOC_LITERAL(1, 12, 31), // "on_pushButton_cadastrar_clicked"
-QT_MOC_LITERAL(2, 44, 0), // ""
-QT_MOC_LITERAL(3, 45, 29), // "on_pushButton_remover_clicked"
-QT_MOC_LITERAL(4, 75, 28) // "on_pushButton_buscar_clicked"
+QT_MOC_LITERAL(1, 12, 30), // "on_pushButton_cadastro_clicked"
+QT_MOC_LITERAL(2, 43, 0), // ""
+QT_MOC_LITERAL(3, 44, 29), // "on_pushButton_remover_clicked"
+QT_MOC_LITERAL(4, 74, 28) // "on_pushButton_buscar_clicked"
 
     },
-    "HotelWindow\0on_pushButton_cadastrar_clicked\0"
+    "HotelWindow\0on_pushButton_cadastro_clicked\0"
     "\0on_pushButton_remover_clicked\0"
     "on_pushButton_buscar_clicked"
 };
@@ -76,7 +76,7 @@ void HotelWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         HotelWindow *_t = static_cast<HotelWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_pushButton_cadastrar_clicked(); break;
+        case 0: _t->on_pushButton_cadastro_clicked(); break;
         case 1: _t->on_pushButton_remover_clicked(); break;
         case 2: _t->on_pushButton_buscar_clicked(); break;
         default: ;

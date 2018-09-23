@@ -29,25 +29,22 @@ public:
     {
         if (remover->objectName().isEmpty())
             remover->setObjectName(QStringLiteral("remover"));
-        remover->resize(450, 340);
+        remover->resize(464, 358);
         label = new QLabel(remover);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(60, 10, 331, 20));
+        label->setGeometry(QRect(20, 10, 431, 20));
         QFont font;
         font.setPointSize(15);
         label->setFont(font);
         label_2 = new QLabel(remover);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(160, 50, 121, 16));
+        label_2->setGeometry(QRect(170, 50, 111, 16));
         label_3 = new QLabel(remover);
         label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(60, 180, 47, 13));
-        QFont font1;
-        font1.setPointSize(12);
-        label_3->setFont(font1);
+        label_3->setGeometry(QRect(40, 160, 47, 13));
         lineEdit_cpf_2 = new QLineEdit(remover);
         lineEdit_cpf_2->setObjectName(QStringLiteral("lineEdit_cpf_2"));
-        lineEdit_cpf_2->setGeometry(QRect(120, 180, 211, 20));
+        lineEdit_cpf_2->setGeometry(QRect(110, 160, 261, 20));
 
         retranslateUi(remover);
 
@@ -57,7 +54,7 @@ public:
     void retranslateUi(QDialog *remover)
     {
         remover->setWindowTitle(QApplication::translate("remover", "Dialog", nullptr));
-        label->setText(QApplication::translate("remover", "BEM-VINDO A TELA DE REMO\303\207\303\203O ", nullptr));
+        label->setText(QApplication::translate("remover", "BEM-VINDO A TELA DE REMO\303\207\303\203O DE CLIENTES", nullptr));
         label_2->setText(QApplication::translate("remover", "Quem deseja remover?", nullptr));
         label_3->setText(QApplication::translate("remover", "CPF:", nullptr));
     } // retranslateUi
