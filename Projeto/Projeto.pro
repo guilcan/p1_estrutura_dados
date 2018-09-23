@@ -35,7 +35,10 @@ HEADERS += \
         hotelwindow.h \
     cadastro.h \
     remover.h \
-    buscar.h
+    buscar.h \
+    les.h \
+    lde.h \
+    no.h
 
 FORMS += \
         hotelwindow.ui \
