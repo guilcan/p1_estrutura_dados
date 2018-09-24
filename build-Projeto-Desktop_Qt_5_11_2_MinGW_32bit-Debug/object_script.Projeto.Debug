@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\hotelwindow.o
+./debug\cadastro.o
+./debug\remover.o
+./debug\popup.o
+./debug\popup_2.o
+./debug\moc_hotelwindow.o
+./debug\moc_cadastro.o
+./debug\moc_remover.o
+./debug\moc_popup.o
+./debug\moc_popup_2.o
+);

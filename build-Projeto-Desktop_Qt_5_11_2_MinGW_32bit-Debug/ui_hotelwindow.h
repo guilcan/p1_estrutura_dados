@@ -29,7 +29,6 @@ public:
     QLabel *label_2;
     QPushButton *pushButton_cadastro;
     QPushButton *pushButton_remover;
-    QPushButton *pushButton_buscar;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -52,13 +51,10 @@ public:
         label_2->setGeometry(QRect(200, 50, 101, 16));
         pushButton_cadastro = new QPushButton(centralWidget);
         pushButton_cadastro->setObjectName(QStringLiteral("pushButton_cadastro"));
-        pushButton_cadastro->setGeometry(QRect(180, 140, 151, 23));
+        pushButton_cadastro->setGeometry(QRect(150, 150, 201, 23));
         pushButton_remover = new QPushButton(centralWidget);
         pushButton_remover->setObjectName(QStringLiteral("pushButton_remover"));
-        pushButton_remover->setGeometry(QRect(130, 190, 241, 23));
-        pushButton_buscar = new QPushButton(centralWidget);
-        pushButton_buscar->setObjectName(QStringLiteral("pushButton_buscar"));
-        pushButton_buscar->setGeometry(QRect(160, 250, 191, 23));
+        pushButton_remover->setGeometry(QRect(150, 210, 201, 23));
         HotelWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(HotelWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -81,9 +77,8 @@ public:
         HotelWindow->setWindowTitle(QApplication::translate("HotelWindow", "HotelWindow", nullptr));
         label->setText(QApplication::translate("HotelWindow", "BEM-VINDO AO SISTEMA DO HOTEL", nullptr));
         label_2->setText(QApplication::translate("HotelWindow", "Oque deseja fazer?", nullptr));
-        pushButton_cadastro->setText(QApplication::translate("HotelWindow", "CADASTRO DE OSPEDE", nullptr));
+        pushButton_cadastro->setText(QApplication::translate("HotelWindow", "CADASTRAR E BUSCAR OSPEDE", nullptr));
         pushButton_remover->setText(QApplication::translate("HotelWindow", "REMO\303\207\303\203O DE OSPEDE DO SISTEMA", nullptr));
-        pushButton_buscar->setText(QApplication::translate("HotelWindow", "BUSCAR OSPEDE NO SISTEMA", nullptr));
     } // retranslateUi
 
 };

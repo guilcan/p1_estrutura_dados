@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\hotelwindow.o
+./release\cadastro.o
+./release\remover.o
+./release\popup.o
+./release\popup_2.o
+./release\moc_hotelwindow.o
+./release\moc_cadastro.o
+./release\moc_remover.o
+./release\moc_popup.o
+./release\moc_popup_2.o
+);

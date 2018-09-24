@@ -2,7 +2,7 @@
 #include "ui_hotelwindow.h"
 #include "cadastro.h"
 #include "remover.h"
-#include "buscar.h"
+
 
 HotelWindow::HotelWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -30,9 +30,4 @@ void HotelWindow::on_pushButton_remover_clicked()
     removerwindow.exec();
 }
 
-void HotelWindow::on_pushButton_buscar_clicked()
-{
-    buscar buscarwindow;
-    buscarwindow.setModal(true);
-    buscarwindow.exec();
-}
+

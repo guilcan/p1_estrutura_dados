@@ -78,7 +78,6 @@ void HotelWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         switch (_id) {
         case 0: _t->on_pushButton_cadastro_clicked(); break;
         case 1: _t->on_pushButton_remover_clicked(); break;
-        case 2: _t->on_pushButton_buscar_clicked(); break;
         default: ;
         }
     }

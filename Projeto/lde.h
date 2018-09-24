@@ -4,6 +4,7 @@
 
 #include "no.h"
 #include <iostream>
+#include <QString>
 using namespace  std;
 
 template<typename T>
@@ -32,15 +33,21 @@ public:
 
     }
 
-    bool insere(T valor){
+    bool insere(T Nome, T CEP, T CPF, T Idade, T Quarto, T Telefone, T ID ){
         No<T>* ptrAtual=primeiro, *ptrAnterior = NULL;
         No<T>* novo = new No<T>;
         if(novo==NULL)
             return false;
         novo->proximo = NULL;
-        novo->valor = valor;
+        novo->ID = ID;
+        novo->Nome = Nome;
+        novo->CEP = CEP;
+        novo->CPF = CPF;
+        novo->Idade = Idade;
+        novo->Quarto = Quarto;
+        novo->Telefone = Telefone;
 
-        while(ptrAtual && ptrAtual->valor < valor){
+        while(ptrAtual && ptrAtual->ID < ID){
             ptrAnterior = ptrAtual;
             ptrAtual = ptrAtual->proximo;
         }
@@ -76,10 +83,14 @@ public:
 
     const No<T>* busca(T valor){
         No<T>* atual = primeiro;
-        while(atual && atual->valor <= valor){
-            if(atual->valor == valor)
+        int x = 1;
+        while(atual){
+            x = QString::compare(atual->CPF, valor, Qt::CaseInsensitive);
+            if(x == 0){
                 return atual;
+              }
             atual=atual->proximo;
+
         }
         return NULL;
     }
@@ -104,12 +115,22 @@ public:
         LDE<T> temp;
         No<T>* ptrAtual = primeiro;
         while(ptrAtual){
-            temp.insere(ptrAtual->valor);
+            temp.insere(ptrAtual->ID);
+            temp.insere(ptrAtual->Nome);
+            temp.insere(ptrAtual->CEP);
+            temp.insere(ptrAtual->CPF);
+            temp.insere(ptrAtual->Telefone);
+            temp.insere(ptrAtual->Quarto);
             ptrAtual=ptrAtual->proximo;
         }
         ptrAtual = other.primeiro;
         while(ptrAtual){
-            temp.insere(ptrAtual->valor);
+            temp.insere(ptrAtual->ID);
+            temp.insere(ptrAtual->Nome);
+            temp.insere(ptrAtual->CEP);
+            temp.insere(ptrAtual->CPF);
+            temp.insere(ptrAtual->Telefone);
+            temp.insere(ptrAtual->Quarto);
             ptrAtual=ptrAtual->proximo;
         }
         return temp;
@@ -121,7 +142,12 @@ public:
         while(atual){
             No<T>* novo = new No<T>;
             novo->proximo = NULL;
-            novo->valor = atual->valor;
+            novo->ID = atual->ID;
+            novo->Nome = atual->Nome;
+            novo->CEP = atual->CEP;
+            novo->CPF = atual->CPF;
+            novo->Telefone = atual->Telefone;
+            novo->Quarto = atual->Quarto;
             if(anterior==NULL){
                 primeiro = novo;
             }else{

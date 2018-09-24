@@ -13,11 +13,36 @@ template<typename T>
 class No{
 private:
     No<T>* proximo;
-    T valor;
+    T Nome;
+    T Idade;
+    T CEP;
+    T CPF;
+    T Telefone;
+    T Quarto;
+    T ID;
 public:
-    T getValor() const{
-        return valor;
+    T getNome() const{
+        return Nome;
     }
+    T getIdade() const{
+        return Idade;
+    }
+    T getCEP() const{
+        return CEP;
+    }
+    T getCPF() const{
+        return CPF;
+    }
+    T getTelefone() const{
+        return Telefone;
+    }
+    T getQuarto() const{
+        return Quarto;
+    }
+    T getID() const{
+        return ID;
+    }
+
     const No<T>* getProx() const{
         return proximo;
     }

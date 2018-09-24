@@ -35,12 +35,19 @@ public:
     QLabel *label_quarto;
     QLineEdit *lineEdit_6;
     QPushButton *pushButton;
+    QLabel *label_2;
+    QLineEdit *lineEdit_7;
+    QLabel *label_3;
+    QLabel *label_4;
+    QLineEdit *lineEdit_8;
+    QPushButton *pushButton_2;
+    QLabel *label_result;
 
     void setupUi(QDialog *cadastro)
     {
         if (cadastro->objectName().isEmpty())
             cadastro->setObjectName(QStringLiteral("cadastro"));
-        cadastro->resize(482, 433);
+        cadastro->resize(482, 574);
         label = new QLabel(cadastro);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(20, 20, 431, 20));
@@ -94,6 +101,28 @@ public:
         pushButton = new QPushButton(cadastro);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(150, 340, 161, 23));
+        label_2 = new QLabel(cadastro);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(10, 290, 47, 13));
+        lineEdit_7 = new QLineEdit(cadastro);
+        lineEdit_7->setObjectName(QStringLiteral("lineEdit_7"));
+        lineEdit_7->setGeometry(QRect(70, 290, 61, 20));
+        label_3 = new QLabel(cadastro);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(20, 400, 111, 16));
+        label_4 = new QLabel(cadastro);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(40, 460, 47, 13));
+        label_4->setFont(font1);
+        lineEdit_8 = new QLineEdit(cadastro);
+        lineEdit_8->setObjectName(QStringLiteral("lineEdit_8"));
+        lineEdit_8->setGeometry(QRect(120, 460, 211, 20));
+        pushButton_2 = new QPushButton(cadastro);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(170, 510, 121, 23));
+        label_result = new QLabel(cadastro);
+        label_result->setObjectName(QStringLiteral("label_result"));
+        label_result->setGeometry(QRect(40, 520, 47, 13));
 
         retranslateUi(cadastro);
 
@@ -109,8 +138,14 @@ public:
         label_cpf->setText(QApplication::translate("cadastro", "CPF:", nullptr));
         label_cep->setText(QApplication::translate("cadastro", "CEP:", nullptr));
         label_telefone->setText(QApplication::translate("cadastro", "Telefone:", nullptr));
+        lineEdit->setText(QString());
         label_quarto->setText(QApplication::translate("cadastro", "Quarto do ospede:", nullptr));
         pushButton->setText(QApplication::translate("cadastro", "CADASTRAR", nullptr));
+        label_2->setText(QApplication::translate("cadastro", "ID:", nullptr));
+        label_3->setText(QApplication::translate("cadastro", "Quem deseja buscar?", nullptr));
+        label_4->setText(QApplication::translate("cadastro", "CPF:", nullptr));
+        pushButton_2->setText(QApplication::translate("cadastro", "BUSCAR", nullptr));
+        label_result->setText(QApplication::translate("cadastro", "TextLabel", nullptr));
     } // retranslateUi
 
 };

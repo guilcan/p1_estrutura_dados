@@ -29,22 +29,25 @@ SOURCES += \
         hotelwindow.cpp \
     cadastro.cpp \
     remover.cpp \
-    buscar.cpp
+    popup.cpp \
+    popup_2.cpp
 
 HEADERS += \
         hotelwindow.h \
     cadastro.h \
     remover.h \
-    buscar.h \
     les.h \
     lde.h \
-    no.h
+    no.h \
+    popup.h \
+    popup_2.h
 
 FORMS += \
         hotelwindow.ui \
     cadastro.ui \
     remover.ui \
-    buscar.ui
+    popup.ui \
+    popup_2.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
